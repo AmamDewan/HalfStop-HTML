@@ -21,10 +21,24 @@
         content: '';
         background: #ef4e22;
         height: 3px;
-        width: 90px;
+        width: 75px;
         z-index: 100;
         position: absolute;
         top: -20px;
+      }
+      .img-container>div, .team-container>div{
+        opacity: 0;
+        background:rgba(239, 78, 34, 0.9);
+        transition: opacity 0.3s ease;
+      }
+      .img-container:hover>div, .team-container:hover>div{
+        opacity: 1;
+      }
+      .text-container{
+        transition: margin-bottom 0.3s ease;
+      }
+      .img-container:hover .text-container{
+        margin-bottom: 1.25rem;
       }
     </style>
   </head>
@@ -134,6 +148,18 @@
             </ul>
           </div>
         </div>
+        <div class="border border-gray-300 p-5 hover:bg-primary hover:text-white">
+          <i class="fas fa-user text-5xl mt-5"></i>
+          <h3 class="font-bold text-xl my-8">Graphic Design</h3>
+          <div>
+            <ul>
+              <li class="my-3">UI & UX</li>
+              <li class="my-3">ILLUSTRATION</li>
+              <li class="my-3">BRANDING</li>
+              <li class="my-3">CULTURE & VOICE</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
     <section class="w-full bg-gray-100 grid grid-cols-2">
@@ -144,38 +170,160 @@
         <a class="uppercase rounded-full font-semibold align-middle py-4 px-8 border border-white hover:bg-white hover:text-black " href="#">Get In Touch</a>
       </div>
     </section>
-    <section class="container mx-auto px-28 py-32">
+    <section class="py-32">
+      <div class="container mx-auto px-28 text-center mb-12">
+        <h2 class="text-4xl font-semibold mb-8 relative title">Awesome Portfolio — A minimal design is usually
+          best for brands, projects and case studies products.</h2>
+        <p class="font-semibold text-gray-400">As a digital designer, a well-organized portfolio showing off your design skills, range, and
+          interests will be a backbone in your search for clients.</p>
+      </div>
+      <div class="grid grid-cols-3 relative">
+        <div class="relative img-container">
+          <img src="http://jellydemos.com/wordpress/manson/wp-content/uploads/2019/03/01-2.jpg" alt="">
+          <div class="absolute inset-0 flex items-end">
+            <div class="p-5 -mb-5 text-white text-container">
+              <p class="text-lg">Digital Design</p>
+              <h2 class="text-2xl font-bold">Amable</h2>
+            </div>
+          </div>
+        </div>
+        <div class="bg-red-500 relative img-container">
+          <img src="http://jellydemos.com/wordpress/manson/wp-content/uploads/2019/03/02-2.jpg" alt="">
+          <div class="absolute inset-0 bg-red-500 flex items-end">
+            <div class="p-5 -mb-5 text-white text-container">
+              <p class="text-lg">Digital Design</p>
+              <h2 class="text-2xl font-bold">Amable</h2>
+            </div>
+          </div>
+        </div>
+        <div class="bg-red-500 relative img-container">
+          <img src="http://jellydemos.com/wordpress/manson/wp-content/uploads/2019/03/01-2.jpg" alt="">
+          <div class="absolute inset-0 bg-red-500 flex items-end">
+            <div class="p-5 -mb-5 text-white text-container">
+              <p class="text-lg">Digital Design</p>
+              <h2 class="text-2xl font-bold">Amable</h2>
+            </div>
+          </div>
+        </div>
+        <div class="bg-red-500 relative img-container">
+          <img src="http://jellydemos.com/wordpress/manson/wp-content/uploads/2019/03/02-2.jpg" alt="">
+          <div class="absolute inset-0 bg-red-500 flex items-end">
+            <div class="p-5 -mb-5 text-white text-container">
+              <p class="text-lg">Digital Design</p>
+              <h2 class="text-2xl font-bold">Amable</h2>
+            </div>
+          </div>
+        </div>
+        <div class="bg-red-500 relative img-container">
+          <img src="http://jellydemos.com/wordpress/manson/wp-content/uploads/2019/03/01-2.jpg" alt="">
+          <div class="absolute inset-0 bg-red-500 flex items-end">
+            <div class="p-5 -mb-5 text-white text-container">
+              <p class="text-lg">Digital Design</p>
+              <h2 class="text-2xl font-bold">Amable</h2>
+            </div>
+          </div>
+        </div>
+        <div class="bg-red-500 relative img-container">
+          <img src="http://jellydemos.com/wordpress/manson/wp-content/uploads/2019/03/02-2.jpg" alt="">
+          <div class="absolute inset-0 bg-red-500 flex items-end">
+            <div class="p-5 -mb-5 text-white text-container">
+              <p class="text-lg">Digital Design</p>
+              <h2 class="text-2xl font-bold">Amable</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container mx-auto px-28 py-32 mb-24">
       <div class="text-center mb-12">
         <h2 class="text-4xl font-semibold mb-8 relative title">Meet the team</h2>
         <p class="font-semibold text-gray-400">As a digital designer, a well-organized portfolio showing off your design skills, range, and
           interests will be a backbone in your search for clients</p>
       </div>
-      <div class="grid grid-cols-3">
+      <div class="grid grid-cols-3 gap-4">
         <div class="flex">
           <div class="border border-primary p-9" style="height: 427px;">
-            <img  style="height: 427px;" src="http://jellydemos.com/wordpress/manson/wp-content/uploads/2019/03/04.jpg" alt="">
-            <p>Amam Dewan</p>
-            <p>CEO & Founder</p>
+            <div class="relative team-container">
+              <img  style="height: 427px;" src="http://jellydemos.com/wordpress/manson/wp-content/uploads/2019/03/04.jpg" alt="">
+              <div class="absolute inset-0 flex items-center justify-center">
+                <div class="flex gap-3 text-white text-lg">
+                  <a class="hover:text-black transition-all duration-500 ease-in-out" href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a class="hover:text-black transition-all duration-500 ease-in-out" href="#"><i class="fab fa-twitter"></i></a>
+                  <a class="hover:text-black transition-all duration-500 ease-in-out" href="#"><i class="fab fa-linkedin-in"></i></a>
+                  <a class="hover:text-black transition-all duration-500 ease-in-out" href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="text-center mt-7">
+              <p class="text-2xl font-bold mb-1">Amam Dewan</p>
+              <p class="text-gray-500 text-lg">CEO & Founder</p>
+            </div>
           </div>
         </div>
         <div class="flex">
           <div class="border border-primary p-9" style="height: 427px;">
-            <img  style="height: 427px;" src="http://jellydemos.com/wordpress/manson/wp-content/uploads/2019/03/04.jpg" alt="">
-            <p>Amam Dewan</p>
-            <p>CEO & Founder</p>
+            <div class="relative team-container">
+              <img  style="height: 427px;" src="http://jellydemos.com/wordpress/manson/wp-content/uploads/2019/03/04.jpg" alt="">
+              <div class="absolute inset-0 flex items-center justify-center">
+                <div class="flex gap-3 text-white text-lg">
+                  <a class="hover:text-black transition-all duration-500 ease-in-out" href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a class="hover:text-black transition-all duration-500 ease-in-out" href="#"><i class="fab fa-twitter"></i></a>
+                  <a class="hover:text-black transition-all duration-500 ease-in-out" href="#"><i class="fab fa-linkedin-in"></i></a>
+                  <a class="hover:text-black transition-all duration-500 ease-in-out" href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="text-center mt-7">
+              <p class="text-2xl font-bold mb-1">Amam Dewan</p>
+              <p class="text-gray-500 text-lg">CEO & Founder</p>
+            </div>
           </div>
         </div>
         <div class="flex">
           <div class="border border-primary p-9" style="height: 427px;">
-            <img  style="height: 427px;" src="http://jellydemos.com/wordpress/manson/wp-content/uploads/2019/03/04.jpg" alt="">
-            <p>Amam Dewan</p>
-            <p>CEO & Founder</p>
+            <div class="relative team-container">
+              <img  style="height: 427px;" src="http://jellydemos.com/wordpress/manson/wp-content/uploads/2019/03/04.jpg" alt="">
+              <div class="absolute inset-0 flex items-center justify-center">
+                <div class="flex gap-3 text-white text-lg">
+                  <a class="hover:text-black transition-all duration-500 ease-in-out" href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a class="hover:text-black transition-all duration-500 ease-in-out" href="#"><i class="fab fa-twitter"></i></a>
+                  <a class="hover:text-black transition-all duration-500 ease-in-out" href="#"><i class="fab fa-linkedin-in"></i></a>
+                  <a class="hover:text-black transition-all duration-500 ease-in-out" href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="text-center mt-7">
+              <p class="text-2xl font-bold mb-1">Amam Dewan</p>
+              <p class="text-gray-500 text-lg">CEO & Founder</p>
+            </div>
           </div>
         </div>
-
       </div>
     </section>
-
+    <section class="container mx-auto px-28 py-32">
+      <ul class="grid grid-cols-4 gap-8">
+        <li class="px-6"><img src="http://jellydemos.com/wordpress/manson/wp-content/uploads/2019/03/01.png" alt=""></li>
+        <li class="px-6"><img src="http://jellydemos.com/wordpress/manson/wp-content/uploads/2019/03/01.png" alt=""></li>
+        <li class="px-6"><img src="http://jellydemos.com/wordpress/manson/wp-content/uploads/2019/03/01.png" alt=""></li>
+        <li class="px-6"><img src="http://jellydemos.com/wordpress/manson/wp-content/uploads/2019/03/01.png" alt=""></li>
+        <li class="px-6"><img src="http://jellydemos.com/wordpress/manson/wp-content/uploads/2019/03/01.png" alt=""></li>
+        <li class="px-6"><img src="http://jellydemos.com/wordpress/manson/wp-content/uploads/2019/03/01.png" alt=""></li>
+        <li class="px-6"><img src="http://jellydemos.com/wordpress/manson/wp-content/uploads/2019/03/01.png" alt=""></li>
+        <li class="px-6"><img src="http://jellydemos.com/wordpress/manson/wp-content/uploads/2019/03/01.png" alt=""></li>
+      </ul>
+    </section>
+    <footer class="bg-gray-900 text-white">
+      <div class="container-md mx-auto px-16 flex justify-between py-8">
+        <ul class="flex gap-8">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Work</a></li>
+          <li><a href="#">Team</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <p class="uppercase">&copy; 2021 By Half Stop Down</p>
+      </div>
+    </footer>
     <script src="" async defer></script>
   </body>
 </html>
