@@ -1,5 +1,7 @@
 module.exports = {
-  purge: [],
+  purge: [
+    'index.html',
+  ],
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
@@ -8,6 +10,9 @@ module.exports = {
         'second': '#4C4C4E'
       }
     },
+    fontFamily: {
+      'sans': ['Oswald']
+    }
   },
   variants: {
     extend: {},
